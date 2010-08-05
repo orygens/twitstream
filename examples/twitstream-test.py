@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+import sys
+from os.path import join, dirname
+sys.path.insert(0, join(dirname(__file__), "../"))
+
 import twitstream
 
 (options, args) = twitstream.parser.parse_args()
